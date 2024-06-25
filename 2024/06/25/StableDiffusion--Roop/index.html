@@ -15,12 +15,12 @@
     <meta name="baidu-site-verification" content="true" />
 
   <link rel="shortcut icon" href="/images/favicon.ico" type="image/png" />
-  <meta name="description" content="之前通过sd来生成小姐姐跳舞视频用的是Stable Diffusion+ControlNet，会闪帧，效果比较粗糙，然后通过EbSynth和达芬奇（或者Pr）处理会好点，最近看到roop这个，可以换脸，效果蛮流弊的，就想试试。。。 1ps sd用的是秋叶大神的整合包  然后烦躁的就来了，内外网的搜，从下午两点搞到凌晨，才完美运行，，，  以防也有遇到同样问题的小朋友们烦躁，给一些解决方法，以供">
+  <meta name="description" content="之前通过sd来生成小姐姐跳舞视频用的是Stable Diffusion+ControlNet，会闪帧，效果比较粗糙，然后通过EbSynth和达芬奇（或者Pr）处理会好点，最近看到roop这个，可以换脸，效果蛮流弊的，就想试试。。。 1ps sd用的是秋叶大神的整合包  然后烦躁的就来了，内外网的搜，从下午两点搞到凌晨，才完美运行，，，">
 <meta property="og:type" content="article">
 <meta property="og:title" content="SD-WebUI中安装繁琐的插件--Roop">
 <meta property="og:url" content="http://www.fangazio.xyz/2024/06/25/StableDiffusion--Roop/index.html">
 <meta property="og:site_name" content="Your Way，Right Away！">
-<meta property="og:description" content="之前通过sd来生成小姐姐跳舞视频用的是Stable Diffusion+ControlNet，会闪帧，效果比较粗糙，然后通过EbSynth和达芬奇（或者Pr）处理会好点，最近看到roop这个，可以换脸，效果蛮流弊的，就想试试。。。 1ps sd用的是秋叶大神的整合包  然后烦躁的就来了，内外网的搜，从下午两点搞到凌晨，才完美运行，，，  以防也有遇到同样问题的小朋友们烦躁，给一些解决方法，以供">
+<meta property="og:description" content="之前通过sd来生成小姐姐跳舞视频用的是Stable Diffusion+ControlNet，会闪帧，效果比较粗糙，然后通过EbSynth和达芬奇（或者Pr）处理会好点，最近看到roop这个，可以换脸，效果蛮流弊的，就想试试。。。 1ps sd用的是秋叶大神的整合包  然后烦躁的就来了，内外网的搜，从下午两点搞到凌晨，才完美运行，，，">
 <meta property="og:locale" content="zh_CN">
 <meta property="og:image" content="https://aziopicpath.oss-cn-beijing.aliyuncs.com/roop/roop1.png">
 <meta property="og:image" content="https://aziopicpath.oss-cn-beijing.aliyuncs.com/roop/roop2.png">
@@ -30,7 +30,7 @@
 <meta property="og:image" content="https://aziopicpath.oss-cn-beijing.aliyuncs.com/roop/roop6.png">
 <meta property="og:image" content="https://aziopicpath.oss-cn-beijing.aliyuncs.com/roop/roop7.webp">
 <meta property="article:published_time" content="2024-06-25T08:23:37.054Z">
-<meta property="article:modified_time" content="2024-06-25T08:27:14.697Z">
+<meta property="article:modified_time" content="2024-06-25T08:30:49.361Z">
 <meta property="article:author" content="fangazio">
 <meta property="article:tag" content="stable diffusion">
 <meta property="article:tag" content="roop">
@@ -38,7 +38,7 @@
 <meta name="twitter:image" content="https://aziopicpath.oss-cn-beijing.aliyuncs.com/roop/roop1.png">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/combine/gh/nexmoe/nexmoe.github.io@latest/css/style.css,npm/highlight.js@9.15.8/styles/atom-one-dark.css,gh/nexmoe/nexmoe.github.io@latest/lib/mdui_043tiny/css/mdui.css,gh/nexmoe/nexmoe.github.io@latest/lib/iconfont/iconfont.css" crossorigin>
   
-  <!--<link rel="stylesheet" href="/css/style.css?v=1719304073719">-->
+  <!--<link rel="stylesheet" href="/css/style.css?v=1719304266215">-->
 
   
 <meta name="generator" content="Hexo 4.2.1"></head>
@@ -235,6 +235,8 @@
 <figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">ps sd用的是秋叶大神的整合包</span><br></pre></td></tr></table></figure>
 
 <p>然后烦躁的就来了，内外网的搜，从下午两点搞到凌晨，才完美运行，，，</p>
+<a id="more"></a>
+
 <p><img data-sizes="auto" data-src="https://aziopicpath.oss-cn-beijing.aliyuncs.com/roop/roop1.png" alt="" class="lazyload"></p>
 <p>以防也有遇到同样问题的小朋友们烦躁，给一些解决方法，以供参考。</p>
 <p>在说roop之前呢，可能你还会遇到一个问题，如果也是要生成Ai换来你视频，你还要安装TemporalKit这个插件，安装这个插件也会有一个小问题，不知道是否是我的个人环境问题或者其他。插件冲突，出现报错：</p>
@@ -324,7 +326,7 @@
   </div>
   <script src="https://cdn.jsdelivr.net/combine/npm/lazysizes@5.1.0/lazysizes.min.js,gh/highlightjs/cdn-release@9.15.8/build/highlight.min.js,npm/mdui@0.4.3/dist/js/mdui.min.js,gh/nexmoe/nexmoe.github.io@latest/js/app.js"></script>
 <script>hljs.initHighlightingOnLoad();</script>
-<!--<script src="/js/app.js?v=1719304073720"></script>-->
+<!--<script src="/js/app.js?v=1719304266215"></script>-->
 
 
     <script src="https://cdn.jsdelivr.net/gh/xtaodada/xtaodada.github.io@0.0.2/copy.js"></script>
